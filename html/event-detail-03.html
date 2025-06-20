@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BE GLOW : 더 나은 일상으로의 한발</title>
+  <link rel="icon" href="../images02/favicon.png">
+  <!-- bootstrap-icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.ncet/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive-mobile.css">
+  <link rel="stylesheet" href="../css/responsive-tablet.css">
+</head>
+<body>
+    <!-- 로그인모달창 -->
+  <div class="member-login-overlay" id="loginModal">
+    <div class="member-login">
+      <div class="member-account">
+        <h1 class="login-slogan">나를 성장시키는 배움,<br><em>클래스101</em>에서 시작하세요.</h1> 
+      </div>
+      <div class="login-field">
+        <div>
+          <input type="email" placeholder="이메일">
+        </div>
+        <div>
+          <input type="password" placeholder="비밀번호" maxlength="12">
+          <i class="toggle-pw bi bi-eye-slash"></i>
+        </div>
+        <button class="btn-member-primary" id="loginSubmit">로그인</button>
+      </div>
+      <div class="join-member">
+        클래스101가 처음이신가요? <a href="html/member-register.html">간편 회원가입</a>
+      </div>
+      <div class="easy-login">
+        <a href="#none" class="btn-easy-login kakao">카카오로 시작하기</a>
+        <a href="#none" class="btn-easy-login facebook">페이스북으로 시작하기</a>
+        <a href="#none" class="btn-easy-login apple">Apple로 시작하기</a>
+        <span class="or">또는</span>
+        <a href="#none" class="btn-easy-login email">이메일 계정으로 시작하기</a>
+      </div>
+      <p class="login-notice">
+        처음 로그인하면 클래스101의 이용약관 및 개인정보처리방침에 동의한 것으로 간주합니다.
+      </p>
+      <button class="btn-modal-close">&times;</button>
+    </div>
+  </div>
+  <div class="container class-detail">
+    <div class="header-include"></div>
+    <div class="container category-main">
+      <div class="header-include"></div>
+      <section class="category-class">
+        <div class="category-class-inner">
+          <div class="front-header">
+            <h2>이벤트
+            </h2>
+          </div>
+          <div class="event-title">
+            <h3>댓글 참여 시 누구나 선물 100% 당첨 이벤트</h3>
+            <p>비글로우<em>조회 925</em></p>
+          </div>
+          <div class="event-class-item-detail">
+            <div class="image-wrap">
+              <img src="../images02/event-01.jpg" alt="">
+            </div>
+            <div class="event-page">
+              <a href="event.html" class="event-list">목록</a>
+              <fieldset style="border: none;">
+                <h4>댓글 달기</h4>
+                <div class="comment-box">
+                  <textarea name="comment" id="comment" fw-filter-isFill fw-label="댓글 내용" fw-msg></textarea>
+                  <div class="evnet-input">
+                    <span class="inside">
+                      <span>
+                        <label for="comment-name">이름</label>
+                        <input type="text" id="comment-name" name="comment-name" fw-filter="isFill" fw-label="댓글작성자" fw-msg>
+                      </span>
+                      <span>
+                        <label for="comment-name">비밀번호</label>
+                        <input type="text" id="comment-name" name="comment-name" fw-filter="isFill" fw-label="댓글작성자" fw-msg>
+                      </span>
+                    </span>
+                    <div class="table">
+                      <table border="1">
+                        <colgroup>
+                          <col style="width: 130px;">
+                          <col style="width: auto;">
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope="row">첨부파일 1</th>
+                            <td>
+                              <input type="file" name="attach_file[]" >
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">첨부파일 2</th>
+                            <td>
+                              <input type="file" name="attach_file[]" >
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">첨부파일 3</th>
+                            <td>
+                              <input type="file" name="attach_file[]" >
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">첨부파일 4</th>
+                            <td>
+                              <input type="file" name="attach_file[]">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">첨부파일 5</th>
+                            <td>
+                              <input type="file" name="attach_file[]">
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              <div class="buttons">
+                <span class="gRight">
+                  <a href="#none" class="gRight-none">취소</a>
+                  <a href="event.html" class="gRight-menu">등록</a>
+                </span>
+              </div>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="footer-include"></div>
+  </div>
+
+  <!-- gototop -->
+<!-- custom.js -->
+<script src="../script/custom.js"></script>
+  <script>
+    console.log('바디높이', document.body.scrollHeight)
+    /* 커리큘럼 모두 펼치기, 접기 */
+    let foldBtn =  document.querySelector('.btn-curriculum-fold');
+    let expandBtn = document.querySelector('.btn-curriculum-expand');
+    let accordion= document.querySelector('.accordion-item-wrap');
+    console.log(foldBtn, expandBtn, accordion);
+    
+    foldBtn.onclick = function(){
+      /* scrollHeight 요소 전체 콘텐츠 높이 (스크롤 포함) */
+      // let fullHeight = accordion.scrollHeight;
+      // console.log(fullHeight);
+      accordion.style.height = accordion.scrollHeight + 'px';
+      setTimeout(()=>{
+        accordion.style.height ='0px'
+      },10)
+      //펼치기
+      expandBtn.onclick = function(){
+        let newHeight  = accordion.scrollHeight;
+        accordion.style.height =newHeight + 'px'
+      }
+    }
+
+    let titles = document.querySelectorAll('.faq-title');
+    let contents = document.querySelectorAll('.faq-content');
+    /* console.log(titles, contents) */
+    for(let i = 0; i<titles.length; i++){
+      titles[i].onclick = function(){
+        //모두 닫기
+        for(let j=0; j < contents.length; j++){
+          contents[j].style.display = 'none'
+        }
+        //클릭된 제목의 바로 다음 형제요소 (nextElementSibling)
+        let next = this.nextElementSibling;
+        if(next){ next.style.display= 'block' }
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BE GLOW : 더 나은 일상으로의 한발</title>
+  <link rel="icon" href="../images02/favicon.png">
+  <!-- swiper-bundle -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- bootstrap-icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.ncet/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive-mobile.css">
+  <link rel="stylesheet" href="../css/responsive-tablet.css">
+</head>
+<body>
+  <!-- 로그인모달창 -->
+  <div class="member-login-overlay" id="loginModal">
+    <div class="member-login">
+      <div class="member-account">
+        <h1 class="login-slogan">나를 성장시키는 배움,<br><em>클래스101</em>에서 시작하세요.</h1> 
+      </div>
+      <div class="login-field">
+        <div>
+          <input type="email" placeholder="이메일">
+        </div>
+        <div>
+          <input type="password" placeholder="비밀번호" maxlength="12">
+          <i class="toggle-pw bi bi-eye-slash"></i>
+        </div>
+        <button class="btn-member-primary" id="loginSubmit">로그인</button>
+      </div>
+      <div class="join-member">
+        클래스101가 처음이신가요? <a href="html/member-register.html">간편 회원가입</a>
+      </div>
+      <div class="easy-login">
+        <a href="#none" class="btn-easy-login kakao">카카오로 시작하기</a>
+        <a href="#none" class="btn-easy-login facebook">페이스북으로 시작하기</a>
+        <a href="#none" class="btn-easy-login apple">Apple로 시작하기</a>
+        <span class="or">또는</span>
+        <a href="#none" class="btn-easy-login email">이메일 계정으로 시작하기</a>
+      </div>
+      <p class="login-notice">
+        처음 로그인하면 클래스101의 이용약관 및 개인정보처리방침에 동의한 것으로 간주합니다.
+      </p>
+      <button class="btn-modal-close">&times;</button>
+    </div>
+  </div>
+  <div class="container category-main">
+    <div class="header-include"></div>
+    <section class="category-class">
+      <div class="category-class-inner">
+        <div class="category-class-main">
+          <h2>제품 구매</h2>
+          <img src="../images02/a4c4cb1b353601170d4f1504419f772f.jpg" alt="">
+        </div>
+        <div class="category-class-detail">
+          <h3>카테고리</h3>
+          <div class="category-shortcut-btn-group">
+            <button class="btn-shortcut active">전체</button>
+            <button class="btn-shortcut">스킨케어</button>
+            <button class="btn-shortcut">클렌징</button>
+            <button class="btn-shortcut">선케어</button>
+            <button class="btn-shortcut">메이크업</button>
+            <button class="btn-shortcut">바디케어</button>
+            <button class="btn-shortcut">화장소품</button>
+          </div>
+        </div>
+        <div class="category-class-sort">
+          <select>
+            <option value="">인기순</option>
+            <option value="">평점순</option>
+          </select>
+          <button class="btn-earlybird">타임 특가</button>
+          <button class="btn-evnet">이벤트 할인</button>
+        </div>
+        <div class="category-class-wrap">
+          <div class="focus-class-items">
+            <div class="focus-class-item" onclick="location.href='../html/class-detail.html'">
+            <div class="thumb">
+              <img src="../images02/best item-01.jpg" alt="">
+              <span class="badge discount">30%할인</span>
+            </div>
+            <div class="overview">
+              <h4></h4>
+              <div class="class-info"></div>
+              <div class="class-price">
+                <div class="sale">30%할인</div>
+                <s class="price-prev">130,000원</s>
+                <span class="price-current">92,400d원</span>
+              </div>
+              <div class="class-review">
+                <span class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </span>
+                <span class="rating">4.9</span>
+                <span class="trainee">1,985452명 수강</span>
+              </div>
+            </div>
+            </div>
+            <div class="focus-class-item"  onclick="location.href='../html/class-detail.html'">
+            <div class="thumb">
+              <img src="../images02/best item-02.jpg" alt="">
+              <span class="badge discount">30%할인</span>
+            </div>
+            <div class="overview">
+              <h4></h4>
+              <div class="class-info"></div>
+              <div class="class-price">
+                <div class="sale">30%할인</div>
+                <s class="price-prev">130,000원</s>
+                <span class="price-current">92,400d원</span>
+              </div>
+              <div class="class-review">
+                <span class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </span>
+                <span class="rating">4.9</span>
+                <span class="trainee">1,985452명 수강</span>
+              </div>
+            </div>
+            </div>
+            <div class="focus-class-item"  onclick="location.href='../html/class-detail.html'">
+            <div class="thumb">
+              <img src="../images02/best item-03.jpg" alt="">
+              <span class="badge discount">30%할인</span>
+            </div>
+            <div class="overview">
+              <h4></h4>
+              <div class="class-info"></div>
+              <div class="class-price">
+                <div class="sale">30%할인</div>
+                <s class="price-prev">130,000원</s>
+                <span class="price-current">92,400d원</span>
+              </div>
+              <div class="class-review">
+                <span class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </span>
+                <span class="rating">4.9</span>
+                <span class="trainee">1,985452명 수강</span>
+              </div>
+            </div>
+            </div>
+            <div class="focus-class-item"  onclick="location.href='../html/class-detail.html'">
+            <div class="thumb">
+              <img src="../images02/best item-04.jpg" alt="">
+              <span class="badge discount">30%할인</span>
+            </div>
+            <div class="overview">
+              <h4></h4>
+              <div class="class-info"></div>
+              <div class="class-price">
+                <div class="sale">30%할인</div>
+                <s class="price-prev">130,000원</s>
+                <span class="price-current">92,400d원</span>
+              </div>
+              <div class="class-review">
+                <span class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </span>
+                <span class="rating">4.9</span>
+                <span class="trainee">1,985452명 수강</span>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="focus-class-items">
+            <div class="focus-class-item"  onclick="location.href='../html/class-detail.html'">
+            <div class="thumb">
+              <img src="../images02/best item-05.jpg" alt="">
+              <span class="badge discount">30%할인</span>
+            </div>
+            <div class="overview">
+              <h4></h4>
+              <div class="class-info"></div>
+              <div class="class-price">
+                <div class="sale">30%할인</div>
+                <s class="price-prev">130,000원</s>
+                <span class="price-current">92,400d원</span>
+              </div>
+              <div class="class-review">
+                <span class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </span>
+                <span class="rating">4.9</span>
+                <span class="trainee">1,985452명 수강</span>
+              </div>
+            </div>
+            </div>
+            <div class="focus-class-item"  onclick="location.href='../html/class-detail.html'">
+            <div class="thumb">
+              <img src="../images02/best item-06.jpg" alt="">
+              <span class="badge discount">30%할인</span>
+            </div>
+            <div class="overview">
+              <h4></h4>
+              <div class="class-info"></div>
+              <div class="class-price">
+                <div class="sale">30%할인</div>
+                <s class="price-prev">130,000원</s>
+                <span class="price-current">92,400d원</span>
+              </div>
+              <div class="class-review">
+                <span class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </span>
+                <span class="rating">4.9</span>
+                <span class="trainee">1,985452명 수강</span>
+              </div>
+            </div>
+            </div>
+            <div class="focus-class-item"  onclick="location.href='../html/class-detail.html'">
+            <div class="thumb">
+              <img src="../images02/best item-07.jpg" alt="">
+              <span class="badge discount">30%할인</span>
+            </div>
+            <div class="overview">
+              <h4></h4>
+              <div class="class-info"></div>
+              <div class="class-price">
+                <div class="sale">30%할인</div>
+                <s class="price-prev">130,000원</s>
+                <span class="price-current">92,400d원</span>
+              </div>
+              <div class="class-review">
+                <span class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </span>
+                <span class="rating">4.9</span>
+                <span class="trainee">1,985452명 수강</span>
+              </div>
+            </div>
+            </div>
+            <div class="focus-class-item"  onclick="location.href='../html/class-detail.html'">
+            <div class="thumb">
+              <img src="../images02/best item-08.jpg" alt="">
+              <span class="badge discount">30%할인</span>
+            </div>
+            <div class="overview">
+              <h4></h4>
+              <div class="class-info"></div>
+              <div class="class-price">
+                <div class="sale">30%할인</div>
+                <s class="price-prev">130,000원</s>
+                <span class="price-current">92,400d원</span>
+              </div>
+              <div class="class-review">
+                <span class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </span>
+                <span class="rating">4.9</span>
+                <span class="trainee">1,985452명 수강</span>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="paging">
+          <button class="prev-list"><i class="bi bi-chevron-left"></i></button>
+          <div class="button-paging-group">
+            <button class="button-paging active">1</button>
+            <button class="button-paging">2</button>
+            <button class="button-paging">3</button>
+            <button class="button-paging">4</button>
+            <button class="button-paging">5</button>
+          </div>
+          <button class="next-list">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <div class="footer-include"></div>
+  </div>
+
+  <!-- custom.js -->
+  <script src="../script/custom.js"></script>
+</body>
+</html>
