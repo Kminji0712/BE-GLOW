@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BE GLOW : 더 나은 일상으로의 한발</title>
+  <link rel="icon" href="../images02/favicon.png">
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>트랜드 그 이상의 클래스, 비욘드 인사이트</title>
+  <link rel="icon" href="../images/favicon.png">
+  
+  <!-- Custom CSS & JS -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive-mobile.css">
+  <link rel="stylesheet" href="../css/responsive-tablet.css">
+  <script src="../script/custom.js"></script>
+</head>
+<body>
+  <!-- 로그인모달창 -->
+  <div class="member-login-overlay" id="loginModal">
+    <div class="member-login">
+      <div class="member-account">
+        <h1 class="login-slogan">나를 성장시키는 배움,<br><em>클래스101</em>에서 시작하세요.</h1> 
+      </div>
+      <div class="login-field">
+        <div>
+          <input type="email" placeholder="이메일">
+        </div>
+        <div>
+          <input type="password" placeholder="비밀번호" maxlength="12">
+          <i class="toggle-pw bi bi-eye-slash"></i>
+        </div>
+        <button class="btn-member-primary" id="loginSubmit">로그인</button>
+      </div>
+      <div class="join-member">
+        클래스101가 처음이신가요? <a href="html/member-register.html">간편 회원가입</a>
+      </div>
+      <div class="easy-login">
+        <a href="#none" class="btn-easy-login kakao">카카오로 시작하기</a>
+        <a href="#none" class="btn-easy-login facebook">페이스북으로 시작하기</a>
+        <a href="#none" class="btn-easy-login apple">Apple로 시작하기</a>
+        <span class="or">또는</span>
+        <a href="#none" class="btn-easy-login email">이메일 계정으로 시작하기</a>
+      </div>
+      <p class="login-notice">
+        처음 로그인하면 클래스101의 이용약관 및 개인정보처리방침에 동의한 것으로 간주합니다.
+      </p>
+      <button class="btn-modal-close">&times;</button>
+    </div>
+  </div>
+  <div class="container take-course">
+    <!-- Header -->
+    <div class="header-include"></div>
+    <section class="take-course">
+      <div class="take-course-inner">
+        <div class="cart-wrap">
+          <h2 class="payment-headline">장바구니</h2>
+          <div class="cart-header">
+            <span>
+              <input class="cart-chk-all" type="checkbox" checked>전체선택 <em>4</em>/4
+            </span>
+            <button class="btn-all-clear">전체삭제</button>
+          </div>
+          <div class="cart-items">
+            <div class="cart-item">
+              <div class="check-status">
+                <input class="cart-chk" type="checkbox" checked>
+              </div>
+              <div class="thum">
+                <img src="../images02/best item-01.jpg" alt="">
+              </div>
+              <div class="cart-overview">
+                <div class="cart-overview-header">
+                  <h4>메이크업 픽서</h4>
+                  <button class="btn-clear">&times;</button>
+                </div>
+                <div class="cart-overview-detail">
+                  <div class="cart-overview-info">
+                    <b class="class-subject">
+                      오랜시간 메이크업을 유지 시켜주는 픽서 기능은 물론 수분까지 가득 채워주는 메이크업 픽서
+                    </b>
+                    <span class="mentor-info">수량<em>1개</em></span>
+                  </div>
+                  <div class="cart-overview-price">
+                    <div>
+                      <span class="sale">30%</span>
+                      <s class="price-prev">132,000원</s>
+                    </div>
+                    <span class="price-current">92,400원</span> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-item">
+              <div class="check-status">
+                <input class="cart-chk" type="checkbox" checked>
+              </div>
+              <div class="thum">
+                <img src="../images02/best item-02.jpg" alt="">
+              </div>
+              <div class="cart-overview">
+                <div class="cart-overview-header">
+                  <h4>페이셜 트리트먼트 에센스</h4>
+                  <button class="btn-clear">&times;</button>
+                </div>
+                <div class="cart-overview-detail">
+                  <div class="cart-overview-info">
+                    <b class="class-subject">
+                      부드럽고 산뜻한 타입으로 피부에 빠르게 흡수
+                    </b>
+                    <span class="mentor-info">수량<em>2개</em></span>
+                  </div>
+                  <div class="cart-overview-price">
+                    <div>
+                      <span class="sale">39%</span>
+                      <s class="price-prev">18,000원</s>
+                    </div>
+                    <span class="price-current">11,000원</span> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-item">
+              <div class="check-status">
+                <input class="cart-chk" type="checkbox" checked>
+              </div>
+              <div class="thum">
+                <img src="../images02/best item-03.jpg" alt="">
+              </div>
+              <div class="cart-overview">
+                <div class="cart-overview-header">
+                  <h4>아티스트 립 블러쉬</h4>
+                  <button class="btn-clear">&times;</button>
+                </div>
+                <div class="cart-overview-detail">
+                  <div class="cart-overview-info">
+                    <b class="class-subject">
+                      건성 피부를 위한 강력한 재생 모이스처라이징 세럼
+                    </b>
+                    <span class="mentor-info">수량<em>1개</em></span>
+                  </div>
+                  <div class="cart-overview-price">
+                    <div>
+                      <span class="sale">12%</span>
+                      <s class="price-prev">49,000원</s>
+                    </div>
+                    <span class="price-current">43,000원</span> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-item">
+              <div class="check-status">
+                <input class="cart-chk" type="checkbox" checked>
+              </div>
+              <div class="thum">
+                <img src="../images02/best item-05.jpg" alt="">
+              </div>
+              <div class="cart-overview">
+                <div class="cart-overview-header">
+                  <h4>클리어 수딩 액티브 에센스</h4>
+                  <button class="btn-clear">&times;</button>
+                </div>
+                <div class="cart-overview-detail">
+                  <div class="cart-overview-info">
+                    <b class="class-subject">
+                      외부자극에 민감해진 피부를 바로 진정 시켜주는 수분 에센스
+                    </b>
+                    <span class="mentor-info">수량<em>1개</em></span>
+                  </div>
+                  <div class="cart-overview-price">
+                    <div>
+                      <span class="sale">20%</span>
+                      <s class="price-prev">49,000원</s>
+                    </div>
+                    <span class="price-current">39,000원</span> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Cart Item Empty -->
+          <div class="cart-item-empty">
+            <h4>수강바구니가 비었습니다.</h4>
+            <p>트랜드 그 이상의 클래스, 비욘드 인사이트에서 좋은 강의를 찾아보세요.</p>
+            <a href="index.html">강의목록 보기</a>
+          </div>
+        </div>
+        <div class="payment">
+          <div class="price-total-wrap">
+            <h2 class="payment-headline">결제 금액</h2>
+            <div class="current-price">
+              <b>총 결제 금액</b>
+              <span><em>270,545</em>원</span>
+            </div>
+            <div class="origin-price">
+              <b>상품금액</b>
+              <span>344,300원</span>
+            </div>
+            <div class="discount-amount">
+              <b>총 할인 금액</b>
+              <span><em>-73,755</em>원</span>
+            </div>
+          </div>
+          <div class="mobile-confirm-wrap">
+            <h2 class="payment-headline">휴대폰 번호 입력</h2>
+            <div>
+              <input type="tel" placeholder="휴대폰 번호(- 없이 숫자로 입력)">
+              <button class="btn-request">인증요청</button>
+            </div>
+          </div>
+          <div class="payment-method-wrap">
+            <h2 class="payment-headline">결제 수단</h2>
+            <div>
+              <label>
+                <input type="radio" name="payment-method"><em></em>카드 전자결제<b class="free-interest">무이자 할부 지원</b>
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="radio" name="payment-method"><em></em>휴대폰 결제
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="radio" name="payment-method"><em></em>계좌이체
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="radio" name="payment-method"><em></em>
+                <img src="../images/ct-payment-naver.png" alt="">네이버페이
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="radio" name="payment-method"><em></em>
+                <img src="../images/ct-payment-kakao.png" alt="">카카오페이
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="radio" name="payment-method"><em></em>
+                <img src="../images/ct-payment-toss.png" alt="">토스페이
+              </label>
+            </div>
+          </div>
+          <button class="btn-payment-final">결제하기</button>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <div class="footer-include"></div>
+  </div>
+  <script src="../script/custom.js"></script>
+</body>
+</html>
