@@ -955,7 +955,7 @@ footer .footer-inner .lnb-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 100px;
+ /* gap: 100px; */
   border-bottom: 1px solid rgba(238, 238, 238, 0.5);
   padding-bottom: 40px;
 }
